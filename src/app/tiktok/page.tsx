@@ -9,7 +9,7 @@ const Tiktok = () => {
   return (
     <div>
       <Header />
-      <Hero />
+      {/* <Hero /> */}
       <Timeline />
       <Footer />
     </div>

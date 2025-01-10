@@ -51,6 +51,7 @@ const ProjectsGrid = () => {
                   project={project}
                   hoveredId={hoveredId}
                   setHoveredId={setHoveredId}
+                  link={project.link} // تمرير الرابط
                 />
               </motion.div>
             ))}

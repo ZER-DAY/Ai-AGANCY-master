@@ -288,7 +288,7 @@ const Timeline: React.FC = () => {
       style={{ width: "100%", minHeight: "100vh" }}
     >
       <h1 className="text-center h2-style">
-        خطوات الانضمام إلى وكالة TikTok للأصيل
+        خطوات الانضمام صانع المحتوى لدى وكالة الاصيل
       </h1>
       <div className="container mx-auto px-4">
         <Chrono

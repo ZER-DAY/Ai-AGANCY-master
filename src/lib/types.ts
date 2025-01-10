@@ -13,8 +13,8 @@ export interface Project {
   title: string;
   description: string;
   features: string[];
+  link: string; // الرابط الخاص بالمشروع
 }
-
 export type TCommonProps = {
   title?: string;
   name?: string;

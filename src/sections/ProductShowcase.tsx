@@ -1,8 +1,9 @@
 "use client";
+
 import productImage from "@/assets/product-image.png";
 import pyramidImage from "@/assets/pyramid.png";
 import tubeImage from "@/assets/tube.png";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useCallback } from "react";
 import {
   motion,
   useScroll,
@@ -34,13 +35,15 @@ export const ProductShowcase = () => {
   );
   const rotateX = useTransform(scrollYProgressRotate, [0, 1], [90, 0]);
 
-  const animateOpacity = () => {
+  // Callback for animating opacity
+  const animateOpacity = useCallback(() => {
     controls.start({
       opacity: 1,
       transition: { ease: "linear" },
     });
-  };
+  }, [controls]);
 
+  // Attach motion value event to handle changes
   useMotionValueEvent(scrollYProgressRotate, "change", (value) => {
     if (value > 0 && value <= 1) {
       animateOpacity();
@@ -48,12 +51,12 @@ export const ProductShowcase = () => {
   });
 
   useEffect(() => {
-    // Check initial scroll position
+    // Check initial scroll position and trigger animation if needed
     const initialValue = scrollYProgressRotate.get();
     if (initialValue > 0 && initialValue <= 1) {
       animateOpacity();
     }
-  }, []);
+  }, [scrollYProgressRotate, animateOpacity]);
 
   return (
     <section

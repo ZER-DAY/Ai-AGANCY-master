@@ -1,8 +1,8 @@
 "use client";
+
 import { useState, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import ProjectCard from "@/components/project-card";
-import { Button } from "@/components/ui/button";
 import { projects } from "@/lib/data";
 import { Flower } from "lucide-react";
 import { containerVariants, itemVariants } from "@/lib/framer-variants";
@@ -40,7 +40,6 @@ const ProjectsGrid = () => {
             كل مشروع يعكس التزامنا بالجودة والتميز في التصميم.
           </motion.h3>
 
-          {/* Grid for projects */}
           <motion.div
             variants={containerVariants}
             className="grid gap-6 px-4 md:grid-cols-3"
@@ -51,22 +50,9 @@ const ProjectsGrid = () => {
                   project={project}
                   hoveredId={hoveredId}
                   setHoveredId={setHoveredId}
-                  link={project.link} // تمرير الرابط
                 />
               </motion.div>
             ))}
-          </motion.div>
-
-          <motion.div
-            variants={itemVariants}
-            className="mt-12 flex justify-center"
-          >
-            <Button
-              variant="default"
-              className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold px-8 py-4 rounded-lg transition-all duration-200 hover:scale-105"
-            >
-              اجعلها ملكك
-            </Button>
           </motion.div>
         </motion.div>
       </div>

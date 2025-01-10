@@ -13,7 +13,7 @@ export interface Project {
   title: string;
   description: string;
   features: string[];
-  link: string; // الرابط الخاص بالمشروع
+  link?: string; // اجعل الخاصية اختيارية
 }
 export type TCommonProps = {
   title?: string;

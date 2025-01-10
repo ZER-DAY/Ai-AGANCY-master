@@ -287,9 +287,7 @@ const Timeline: React.FC = () => {
       className="bg-gradient-to-br from-gray-900  to-white-900 text-white py-10" //via-gray-800
       style={{ width: "100%", minHeight: "100vh" }}
     >
-      <h1 className="text-center h2-style">
-        خطوات الانضمام صانع المحتوى لدى وكالة الاصيل
-      </h1>
+      <h1 className="text-center h2-style">خطوات مراحل تطور صانع المحتوى</h1>
       <div className="container mx-auto px-4">
         <Chrono
           items={items}

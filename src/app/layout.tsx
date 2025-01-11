@@ -2,6 +2,8 @@ import { Cairo } from "next/font/google";
 import { Metadata } from "next";
 import "./globals.css";
 import clsx from "clsx";
+import { Footer } from "@/sections/Footer";
+import { Header } from "@/sections/Header";
 
 // تحميل خط Cairo مع دعم الحروف العربية واللاتينية
 const cairo = Cairo({ subsets: ["latin", "arabic"] });
@@ -21,7 +23,9 @@ export default function RootLayout({
       {" "}
       {/* تحديد اللغة العربية */}
       <body className={clsx(cairo.className, "antialiased bg-[#EAEEFE]")}>
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

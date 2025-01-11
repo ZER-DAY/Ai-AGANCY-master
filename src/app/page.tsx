@@ -7,12 +7,9 @@ import Benefits from "@/sections/benefits";
 export default function Home() {
   return (
     <>
-      <Header />
       <Hero />
       <Work />
       <Benefits />
-
-      <Footer />
     </>
   );
 }

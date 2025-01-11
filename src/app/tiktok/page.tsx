@@ -8,11 +8,9 @@ import FeaturesSection from "@/sections/FeaturesSection";
 const Tiktok = () => {
   return (
     <div>
-      <Header />
       <FeaturesSection />
       {/* <Hero /> */}
       {/* <Timeline /> */}
-      <Footer />
     </div>
   );
 };

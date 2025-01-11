@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "../components/FeatureCard";
-
+import Link from "next/link";
 const FeaturesSection = () => {
   const features = [
     {
@@ -64,7 +64,7 @@ const FeaturesSection = () => {
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
           شروط الانضمام إلينا
         </h2>
-        <div className="flex items-center justify-center gap-8">
+        <div className="flex items-center justify-center gap-6">
           <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
             قدم طلب الانضمام
           </button>
@@ -74,7 +74,9 @@ const FeaturesSection = () => {
             type="requirement"
           />
           <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
-            تعرف على الخطوات
+            <Link href="tiktokstep" className="text-white no-underline">
+              تعرف على الخطوات
+            </Link>
           </button>
         </div>
       </div>

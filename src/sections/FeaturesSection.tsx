@@ -1,6 +1,7 @@
 import React from "react";
 import FeatureCard from "../components/FeatureCard";
 import Link from "next/link";
+
 const FeaturesSection = () => {
   const features = [
     {
@@ -51,6 +52,17 @@ const FeaturesSection = () => {
           ودعم المبدعين والموهوبين بأسلوب مبتكر ومتميز، بما يعزز الإبداع
           والتنمية المجتمعية.
         </p>
+
+        {/* بطاقة شروط الانضمام */}
+        <div className=" flex justify-center mb-12">
+          <FeatureCard
+            title="شروط الانضمام"
+            description={requirements}
+            type="requirement"
+          />
+        </div>
+
+        {/* بطاقات المزايا */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {features.map((feature, index) => (
             <FeatureCard
@@ -61,18 +73,12 @@ const FeaturesSection = () => {
             />
           ))}
         </div>
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          شروط الانضمام إلينا
-        </h2>
+
+        {/* الأزرار */}
         <div className="flex items-center justify-center gap-6">
           <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
             قدم طلب الانضمام
           </button>
-          <FeatureCard
-            title="شروط الانضمام"
-            description={requirements}
-            type="requirement"
-          />
           <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
             <Link href="tiktokstep" className="text-white no-underline">
               تعرف على الخطوات

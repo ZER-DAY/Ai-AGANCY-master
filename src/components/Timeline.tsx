@@ -12,66 +12,59 @@ const Timeline: React.FC = () => {
   const items = [
     {
       title: "الخطوة الأولى",
-      cardTitle: "المرحلة الأولى: المقابلة",
+      cardTitle: (
+        <div style={{ textAlign: "right", direction: "rtl" }}>
+          المرحلة الأولى: المقابلة
+        </div>
+      ),
       cardSubtitle: (
-        <div style={{ textAlign: "right", direction: "rtl", color: "#FFD700" }}>
+        <div style={styles.subtitle}>
           الهدف: توفير بداية قوية ومنظمة لصانع المحتوى مع الشركة من خلال فهم
           شامل لاحتياجاته، قدراته، وكيفية دعمه لتحقيق النجاح المشترك.
         </div>
       ),
       cardDetailedText: (
-        <div
-          style={{
-            whiteSpace: "pre-line",
-            textAlign: "right",
-            direction: "rtl",
-            color: "#E5E7EB",
-            fontSize: "16px",
-          }}
-        >
+        <div style={styles.detailedText}>
           {`
 الجدولة:
 - تخصيص يومين أسبوعيًا لعقد مقابلات مع صناع المحتوى الجدد ومتابعة المستخدمين الأوائل.
+
 التنسيق:
 - تنظيم الجدول بالتعاون بين قسم العلاقات العامة وفريق الخبراء.
+
 فهم الخلفية:
 - دراسة أهداف صانع المحتوى وأسباب اهتمامه بالشركة.
+
 تقييم المهارات:
 - قياس الإبداع، التواصل، التفاعل، وتنفيذ الأفكار.
+
 تحديد المجالات المستهدفة:
 - مناقشة التخصص (كوميديا، تعليم، ترفيه، إلخ).
+
 تحديد الجمهور المستهدف:
 - تحديد الجمهور وأسلوب المحتوى.
           `}
         </div>
       ),
-      media: {
-        type: "IMAGE",
-        source: { url: "/images/software-engineer.jpg" },
-      },
     },
     {
       title: "الخطوة الثانية",
-      cardTitle: "المرحلة الثانية: التعاقد",
+      cardTitle: (
+        <div style={{ textAlign: "right", direction: "rtl" }}>
+          المرحلة الثانية: التعاقد
+        </div>
+      ),
       cardSubtitle: (
-        <div style={{ textAlign: "right", direction: "rtl", color: "#FFD700" }}>
+        <div style={styles.subtitle}>
           الهدف: ضمان بداية سلسة لصانع المحتوى مع الوكالة من خلال تحديد التوقعات
           المتبادلة.
         </div>
       ),
       cardDetailedText: (
-        <div
-          style={{
-            whiteSpace: "pre-line",
-            textAlign: "right",
-            direction: "rtl",
-            color: "#E5E7EB",
-            fontSize: "16px",
-          }}
-        >
+        <div style={styles.detailedText}>
           {`
 1. التحقق من مطابقة الحساب وشروط التعاقد:
-   - مراجعة حساب تيك توك: التأكد من توافق الحساب مع معايير الوكالة من حيث العمر، جودة المحتوى، ومستوى الخبرات.
+   - مراجعة حساب تيك توك: التأكد من توافق الحساب مع معايير الوكالة.
    - التحقق من تواجد صانع المحتوى ضمن نطاق تصريح العمل في الشرق الأوسط وشمال إفريقيا.
 
 2. التحقق من الشروط:
@@ -79,7 +72,7 @@ const Timeline: React.FC = () => {
    - مناقشة بنود التعاقد: توضيح الحقوق والواجبات.
 
 3. توثيق الانضمام:
-   - إعداد رسالة تأكيد بانضمام صانع المحتوى والتزامه بالشروط وإرشادات مجتمع تيك توك.
+   - إعداد رسالة تأكيد بانضمام صانع المحتوى والتزامه بالشروط.
    - التأكيد على عدم الانضمام لأي وكالة أخرى خلال فترة التعاقد.
 
 4. توضيح الامتيازات:
@@ -94,129 +87,94 @@ const Timeline: React.FC = () => {
           `}
         </div>
       ),
-      media: {
-        type: "IMAGE",
-        source: { url: "/images/graduation.jpg" },
-      },
     },
     {
       title: "الخطوة الثالثة",
-      cardTitle: "المرحلة الثالثة: التعليم المعزز",
+      cardTitle: (
+        <div style={{ textAlign: "right", direction: "rtl" }}>
+          المرحلة الثالثة: التعليم المعزز
+        </div>
+      ),
       cardSubtitle: (
-        <div style={{ textAlign: "right", direction: "rtl", color: "#FFD700" }}>
+        <div style={styles.subtitle}>
           تزويد صانع المحتوى بالمعرفة الأساسية وأدوات الدعم لفهم منصة تيك توك
           بشكل احترافي.
         </div>
       ),
       cardDetailedText: (
-        <div
-          style={{
-            whiteSpace: "pre-line",
-            textAlign: "right",
-            direction: "rtl",
-            color: "#E5E7EB",
-            fontSize: "16px",
-          }}
-        >
+        <div style={styles.detailedText}>
           {`
 وصف المرحلة:
-- تزويد صانع المحتوى بالمعرفة الأساسية اللازمة للانطلاق في صناعة المحتوى بشكل احترافي.
-- التركيز على فهم القوانين والسياسات وأدوات الدعم المتاحة لتعزيز استيعابه للبيئة التي يعمل بها.
+- تزويد صانع المحتوى بالمعرفة الأساسية اللازمة للانطلاق.
+- التركيز على فهم القوانين والسياسات وأدوات الدعم المتاحة.
 
 أهداف التعليم المعزز:
 1. التعرف على سياسات تيك توك:
-   - فهم قوانين الحظر والسياسات المتعلقة بالمحتوى لضمان الالتزام بمعايير المنصة.
+   - فهم قوانين الحظر والسياسات المتعلقة بالمحتوى.
+
 2. التعرف على المنصات المساعدة:
    - تقديم معلومات حول الأدوات والمنصات الداعمة مثل برامج تحرير الفيديو وأدوات تحليل الأداء.
+
 3. التعرف على المراحل القادمة وفريق العمل:
    - إطلاع صانع المحتوى على الخطوات التالية وفريق العمل الذي سيتعاون معه.
+
 4. تسليم استراتيجية مخصصة:
    - إعداد استراتيجية تناسب قدراته وأهدافه الإبداعية.
 
 طريقة التنفيذ:
-1. التعليم عبر الفيديوهات المسجلة:
-   - توفير مواد تعليمية مسجلة تغطي جميع النقاط أعلاه.
-2. جلسة متابعة قصيرة:
-   - عقد جلسة لتقييم مدى استيعاب المحتوى التعليمي والإجابة على أي استفسارات.
-
-الهدف:
-- بناء أساس قوي لفهم سياسات المنصة وأدواتها، وتمكين صانع المحتوى من تحقيق أهدافه.
+1. التعليم عبر الفيديوهات المسجلة.
+2. جلسة متابعة قصيرة لتقييم استيعاب المحتوى.
           `}
         </div>
       ),
-      media: {
-        type: "IMAGE",
-        source: { url: "/images/training-session.jpg" },
-      },
     },
     {
       title: "الخطوة الرابعة",
-      cardTitle: "المرحلة الرابعة: التدريب لصناعة الفيديو",
+      cardTitle: (
+        <div style={{ textAlign: "right", direction: "rtl" }}>
+          المرحلة الرابعة: التدريب لصناعة الفيديو
+        </div>
+      ),
       cardSubtitle: (
-        <div style={{ textAlign: "right", direction: "rtl", color: "#FFD700" }}>
+        <div style={styles.subtitle}>
           تمكين صناع المحتوى من إنتاج فيديوهات احترافية تجمع بين الإبداع
           والجاذبية.
         </div>
       ),
       cardDetailedText: (
-        <div
-          style={{
-            whiteSpace: "pre-line",
-            textAlign: "right",
-            direction: "rtl",
-            color: "#E5E7EB",
-            fontSize: "16px",
-          }}
-        >
+        <div style={styles.detailedText}>
           {`
 أهداف التدريب:
-1. تصوير الذات:
-   - تحسين جودة التصوير الشخصي مع التركيز على الإضاءة والزوايا المناسبة.
-2. استخدام الصوت الحقيقي:
-   - تقديم النصائح لتحسين جودة الصوت الطبيعي أثناء التصوير.
-3. إضافة المؤثرات المرئية والصوتية:
-   - تعزيز جاذبية الفيديو باستخدام تأثيرات مبتكرة.
-4. إضافة الموسيقى:
-   - اختيار الموسيقى المناسبة التي تعزز الرسالة والجو العام للفيديو.
+1. تحسين جودة التصوير الشخصي مع التركيز على الإضاءة والزوايا المناسبة.
+2. تقديم النصائح لتحسين جودة الصوت الطبيعي أثناء التصوير.
+3. تعزيز جاذبية الفيديو باستخدام تأثيرات مبتكرة.
+4. اختيار الموسيقى المناسبة التي تعزز الرسالة والجو العام.
 
 مراحل التدريب:
-1. الحلقات المسجلة:
-   - توفير مواد تعليمية مسجلة تتناول المهارات الأساسية والممارسات الاحترافية.
-2. الحلقات التدريبية المباشرة:
-   - عقد جلسات تفاعلية مباشرة تقدم تدريبًا عمليًا مع استشارات فورية.
-
-الهدف:
-- إعداد صناع المحتوى لإنتاج فيديوهات احترافية تجمع بين الإبداع والجاذبية مع تحقيق التأثير السريع والجودة العالية.
+1. الحلقات المسجلة لتعلم المهارات الأساسية.
+2. الحلقات التدريبية المباشرة مع استشارات فورية.
           `}
         </div>
       ),
-      media: {
-        type: "IMAGE",
-        source: { url: "/images/video-production.jpg" },
-      },
     },
     {
       title: "الخطوة الخامسة",
-      cardTitle: "المرحلة الخامسة: التدريب لصناعة البث المباشر",
+      cardTitle: (
+        <div style={{ textAlign: "right", direction: "rtl" }}>
+          المرحلة الخامسة: التدريب لصناعة البث المباشر
+        </div>
+      ),
       cardSubtitle: (
-        <div style={{ textAlign: "right", direction: "rtl", color: "#FFD700" }}>
+        <div style={styles.subtitle}>
           تمكين صانع المحتوى من تقديم بث مباشر احترافي يعزز التفاعل والجاذبية.
         </div>
       ),
       cardDetailedText: (
-        <div
-          style={{
-            whiteSpace: "pre-line",
-            textAlign: "right",
-            direction: "rtl",
-            color: "#E5E7EB",
-            fontSize: "16px",
-          }}
-        >
+        <div style={styles.detailedText}>
           {`
 أهداف التدريب:
 1. تحسين الإضاءة والخلفية والمظهر.
-2. أفكار مبتكرة لتحفيز التفاعل: مثل المسابقات واستطلاعات الرأي.
+2. أفكار مبتكرة لتحفيز التفاعل (مثل المسابقات واستطلاعات الرأي).
 3. تحسين الأداء الشخصي أثناء البث المباشر.
 
 مراحل التدريب:
@@ -225,30 +183,22 @@ const Timeline: React.FC = () => {
           `}
         </div>
       ),
-      media: {
-        type: "IMAGE",
-        source: { url: "/images/live-streaming.jpg" },
-      },
     },
     {
       title: "الخطوة السادسة",
-      cardTitle: "المرحلة السادسة: التدريب لاستخدام أدوات الذكاء الاصطناعي",
+      cardTitle: (
+        <div style={{ textAlign: "right", direction: "rtl" }}>
+          المرحلة السادسة: التدريب لاستخدام أدوات الذكاء الاصطناعي
+        </div>
+      ),
       cardSubtitle: (
-        <div style={{ textAlign: "right", direction: "rtl", color: "#FFD700" }}>
+        <div style={styles.subtitle}>
           تعزيز إبداع صناع المحتوى باستخدام الذكاء الاصطناعي لتحسين جودة المحتوى
           وزيادة التفاعل.
         </div>
       ),
       cardDetailedText: (
-        <div
-          style={{
-            whiteSpace: "pre-line",
-            textAlign: "right",
-            direction: "rtl",
-            color: "#E5E7EB",
-            fontSize: "16px",
-          }}
-        >
+        <div style={styles.detailedText}>
           {`
 تفاصيل التدريب:
 1. جلسات تدريبية مباشرة لتعلم الأدوات.
@@ -260,10 +210,6 @@ const Timeline: React.FC = () => {
           `}
         </div>
       ),
-      media: {
-        type: "IMAGE",
-        source: { url: "/images/ai-tools.jpg" },
-      },
     },
   ];
 
@@ -282,29 +228,61 @@ const Timeline: React.FC = () => {
   }, []);
 
   return (
-    <div
-      dir="rtl"
-      className="bg-gradient-to-br from-gray-900  to-white-900 text-white py-10" //via-gray-800
-      style={{ width: "100%", minHeight: "100vh" }}
-    >
-      <h1 className="text-center h2-style">خطوات مراحل تطور صانع المحتوى</h1>
-      <div className="container mx-auto px-4">
+    <div dir="rtl" style={styles.container}>
+      <h1 style={styles.title}>خطوات مراحل تطور صانع المحتوى</h1>
+      <div style={styles.chronoContainer}>
         <Chrono
           items={items}
-          mode="VERTICAL_ALTERNATING"
+          mode="VERTICAL"
           theme={{
-            primary: "#4F46E5", // الأزرق الأساسي
-            secondary: "#FFD700", // الذهبي الفاتح
-            cardBgColor: "rgba(31, 41, 55, 0.8)", // خلفية البطاقات
-            cardForeColor: "#fff", // لون النصوص داخل البطاقات
-            titleColorActive: "#FFD700", //  لون العنوان النشط باللون الذهبي الفاتح
+            primary: "#4F46E5",
+            secondary: "#FFD700",
+            cardBgColor: "rgba(31, 41, 55, 0.9)",
+            cardForeColor: "#fff",
+            titleColorActive: "#FFD700",
           }}
-          cardHeight={350}
+          cardHeight={300}
           scrollable
         />
       </div>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    background: "linear-gradient(to bottom right, #111827, #1F2937)",
+    color: "#FFFFFF",
+    padding: "40px 0",
+    minHeight: "100vh",
+    width: "100%",
+  },
+  title: {
+    textAlign: "center" as const,
+    fontSize: "2.5rem",
+    fontWeight: "bold" as const,
+    marginBottom: "20px",
+  },
+  chronoContainer: {
+    maxWidth: "1200px",
+    margin: "0 auto",
+    padding: "0 16px",
+  },
+  subtitle: {
+    textAlign: "right" as const,
+    direction: "rtl" as const,
+    color: "#FFD700",
+    fontSize: "1.2rem",
+    lineHeight: "1.6",
+  },
+  detailedText: {
+    whiteSpace: "pre-line" as const,
+    textAlign: "right" as const,
+    direction: "rtl" as const,
+    color: "#E5E7EB",
+    fontSize: "1rem",
+    lineHeight: "1.8",
+  },
 };
 
 export default Timeline;

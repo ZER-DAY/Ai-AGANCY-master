@@ -41,49 +41,63 @@ const FeaturesSection = () => {
   ];
 
   return (
-    <section className="py-12 bg-gray-100" dir="rtl">
-      <div className="container mx-auto px-4">
-        <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">
-          مزايا الانضمام لوكالة الأصيل
-        </h2>
-        <p className="text-center text-gray-600 mb-8">
-          نهدف إلى تقديم فريق إبداعي ومحتوى هادف يساهم في التأثير الإيجابي على
-          المجتمع، مع الالتزام بأخلاقياته وقيمه. نسعى لتقديم المعرفة والعلوم
-          ودعم المبدعين والموهوبين بأسلوب مبتكر ومتميز، بما يعزز الإبداع
-          والتنمية المجتمعية.
-        </p>
+    <section
+      className="py-12 relative"
+      style={{
+        backgroundImage: "url('/back.png')", // مسار الصورة
+        backgroundSize: "cover", // تغطية الخلفية
+        backgroundPosition: "center", // مركزة الصورة
+      }}
+      dir="rtl"
+    >
+      {/* طبقة شبه شفافة فوق الخلفية */}
+      <div className="absolute inset-0 bg-black/30"></div>
 
-        {/* بطاقة شروط الانضمام */}
-        <div className=" flex justify-center mb-12">
-          <FeatureCard
-            title="شروط الانضمام"
-            description={requirements}
-            type="requirement"
-          />
-        </div>
+      {/* المحتوى */}
+      <div className="relative z-10">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold text-center text-white mb-4">
+            مزايا الانضمام لوكالة الأصيل
+          </h2>
+          <p className="text-center text-white mb-8">
+            نهدف إلى تقديم فريق إبداعي ومحتوى هادف يساهم في التأثير الإيجابي على
+            المجتمع، مع الالتزام بأخلاقياته وقيمه. نسعى لتقديم المعرفة والعلوم
+            ودعم المبدعين والموهوبين بأسلوب مبتكر ومتميز، بما يعزز الإبداع
+            والتنمية المجتمعية.
+          </p>
 
-        {/* بطاقات المزايا */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {features.map((feature, index) => (
+          {/* بطاقة شروط الانضمام */}
+          <div className="flex justify-center mb-12">
             <FeatureCard
-              key={index}
-              title={feature.title}
-              description={feature.description}
-              type="feature"
+              title="شروط الانضمام"
+              description={requirements}
+              type="requirement"
             />
-          ))}
-        </div>
+          </div>
 
-        {/* الأزرار */}
-        <div className="flex items-center justify-center gap-6">
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
-            قدم طلب الانضمام
-          </button>
-          <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
-            <Link href="tiktokstep" className="text-white no-underline">
-              تعرف على الخطوات
-            </Link>
-          </button>
+          {/* بطاقات المزايا */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            {features.map((feature, index) => (
+              <FeatureCard
+                key={index}
+                title={feature.title}
+                description={feature.description}
+                type="feature"
+              />
+            ))}
+          </div>
+
+          {/* الأزرار */}
+          <div className="flex items-center justify-center gap-6">
+            <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+              قدم طلب الانضمام
+            </button>
+            <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
+              <Link href="tiktokstep" className="text-white no-underline">
+                تعرف على الخطوات
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
     </section>

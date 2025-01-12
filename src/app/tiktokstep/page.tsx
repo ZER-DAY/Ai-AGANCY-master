@@ -1,5 +1,5 @@
 "use client";
-
+import Link from "next/link";
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
 
@@ -245,6 +245,14 @@ const Timeline: React.FC = () => {
           scrollable
         />
       </div>
+      {/* الزر في نهاية الصفحة */}
+      <div style={styles.buttonContainer}>
+        <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
+          <Link href="/tiktokstep" className="text-white no-underline">
+            تعرف على الخطوات
+          </Link>
+        </button>
+      </div>
     </div>
   );
 };
@@ -282,6 +290,11 @@ const styles = {
     color: "#E5E7EB",
     fontSize: "1rem",
     lineHeight: "1.8",
+  },
+  buttonContainer: {
+    display: "flex",
+    justifyContent: "center",
+    marginTop: "20px",
   },
 };
 

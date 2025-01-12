@@ -50,11 +50,11 @@ export const Header = () => {
 
             {/* قائمة التنقل (للأجهزة الكبيرة) */}
             <nav className="hidden md:flex gap-6 text-white/60 items-center">
-              <a href="/">الرئيسية</a>
-              <a href="/tiktok">تيك توك</a>
-              <a href="#">الزبائن</a>
-              <a href="#">من نحن</a>
-              <a href="#">اتصل بنا</a>
+              <Link href="/">الرئيسية</Link>
+              <Link href="/tiktok">تيك توك</Link>
+              <Link href="#">الزبائن</Link>
+              <Link href="#">من نحن</Link>
+              <Link href="#">اتصل بنا</Link>
               <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                 انطلق معنا
               </button>

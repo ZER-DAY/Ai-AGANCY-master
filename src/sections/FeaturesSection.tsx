@@ -97,7 +97,7 @@ const FeaturesSection = () => {
             </button>
             <button className="bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
               <Link href="/tiktokstep" className="text-white no-underline">
-                قدم طلب الانضمام
+                تعرف على المراحل
               </Link>
             </button>
           </div>

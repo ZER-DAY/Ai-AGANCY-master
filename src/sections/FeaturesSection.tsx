@@ -61,7 +61,7 @@ const FeaturesSection = () => {
       {/* المحتوى */}
       <div className="relative z-10">
         <div className="container mx-auto px-4">
-          <h2 className=" h2-style text-2xl font-bold text-center  mb-4">
+          <h2 className=" text-cyan-400 text-2xl font-bold text-center  mb-4">
             مزايا الانضمام لوكالة الأصيل
           </h2>
           <p className="text-center text-white mb-8">

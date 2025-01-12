@@ -50,8 +50,8 @@ export const Header = () => {
 
             {/* قائمة التنقل (للأجهزة الكبيرة) */}
             <nav className="hidden md:flex gap-6 text-white/60 items-center">
-              <a href="#">الرئيسية</a>
-              <a href="#">تيك توك</a>
+              <a href="/">الرئيسية</a>
+              <a href="/tiktok">تيك توك</a>
               <a href="#">الزبائن</a>
               <a href="#">من نحن</a>
               <a href="#">اتصل بنا</a>

@@ -247,7 +247,7 @@ const Timeline: React.FC = () => {
       </div>
       {/* الزر في نهاية الصفحة */}
       <div style={styles.buttonContainer}>
-        <button className="bg-green-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
+        <button className="bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-red-500 transition-colors duration-300">
           <Link href="/tiktokstep" className="text-white no-underline">
             قدم طلب الانضمام
           </Link>

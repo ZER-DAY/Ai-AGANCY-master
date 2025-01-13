@@ -77,9 +77,20 @@ const FeaturesSection = () => {
               type="requirement"
             />
           </div>
-
+          <div className="flex items-center justify-center gap-6 ">
+            <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
+              <Link href="/tiktokjoin" className="text-white no-underline">
+                قدم طلب الانضمام{" "}
+              </Link>
+            </button>
+            <button className="bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
+              <Link href="/tiktokstep" className="text-white no-underline">
+                تعرف على المراحل
+              </Link>
+            </button>
+          </div>
           {/* بطاقات المزايا */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12 py-4">
             {features.map((feature, index) => (
               <FeatureCard
                 key={index}

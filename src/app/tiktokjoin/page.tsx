@@ -60,7 +60,7 @@ const TiktokInjouPage = () => {
         {/* استمارة تقديم الطلب */}
         <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8 mb-8 lg:mb-0">
           <h2 className="text-purple-700 text-2xl font-semibold text-center mb-6">
-            تقديم طلب الإنضمام
+            أدخل البيانات
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
             {/* معرف الحساب */}

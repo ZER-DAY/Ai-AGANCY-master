@@ -15,6 +15,10 @@ export const Header = () => {
     setIsMenuOpen(!isMenuOpen); // تغيير حالة القائمة عند النقر على الأيقونة
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false); // إغلاق القائمة عند النقر على رابط
+  };
+
   return (
     <header dir="rtl" className="sticky top-0 backdrop-blur-sm z-20">
       {/* الجزء العلوي من الهيدر */}
@@ -71,16 +75,20 @@ export const Header = () => {
             {/* قائمة التنقل (للأجهزة المحمولة) */}
             {isMenuOpen && (
               <nav className="md:hidden absolute top-24 right-0 bg-[#1A1A1A] w-full text-white/60 p-4">
-                <Link href="/" className="block py-2">
+                <Link href="/" className="block py-2" onClick={closeMenu}>
                   الرئيسية
                 </Link>
-                <Link href="/tiktok" className="block py-2">
+                <Link href="/tiktok" className="block py-2" onClick={closeMenu}>
                   تيك توك
                 </Link>
-                <Link href="/aboutus" className="block py-2">
+                <Link
+                  href="/aboutus"
+                  className="block py-2"
+                  onClick={closeMenu}
+                >
                   من نحن
                 </Link>
-                <Link href="#" className="block py-2">
+                <Link href="#" className="block py-2" onClick={closeMenu}>
                   اتصل بنا
                 </Link>
                 <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight mt-2">

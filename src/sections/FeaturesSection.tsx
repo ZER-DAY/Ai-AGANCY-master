@@ -93,7 +93,9 @@ const FeaturesSection = () => {
           {/* الأزرار */}
           <div className="flex items-center justify-center gap-6">
             <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
-              قدم طلب الانضمام
+              <Link href="/tiktokjoin" className="text-white no-underline">
+                قدم طلب الانضمام{" "}
+              </Link>
             </button>
             <button className="bg-red-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-green-600 transition-colors duration-300">
               <Link href="/tiktokstep" className="text-white no-underline">

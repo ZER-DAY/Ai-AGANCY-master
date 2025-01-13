@@ -8,7 +8,7 @@ import logoSaaSImage from "@/assets/logosaas.png";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState } from "react";
-
+import Link from "next/link";
 const AnimatedLink = ({ text }: { text: string }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -59,7 +59,7 @@ const AnimatedLink = ({ text }: { text: string }) => {
 
 export const Footer = () => {
   return (
-    <footer className="bg-black/95 text-[#BCBCBC] py-10 text-sm">
+    <footer dir="rtl" className="bg-black/95 text-[#BCBCBC] py-10 text-sm">
       <div className="centered-content-container">
         <div className="flex flex-col items-center gap-y-6">
           <div className="inline-flex relative group">
@@ -72,12 +72,10 @@ export const Footer = () => {
             />
           </div>
           <nav className="flex flex-col items-center md:flex-row gap-4">
-            <AnimatedLink text="About" />
-            <AnimatedLink text="Features" />
-            <AnimatedLink text="Customers" />
-            <AnimatedLink text="Pricing" />
-            <AnimatedLink text="Help" />
-            <AnimatedLink text="Careers" />
+            <Link href="/">الرئيسية</Link>
+            <Link href="/tiktok">تيك توك</Link>
+            <Link href="#">من نحن</Link>
+            <Link href="#">اتصل بنا</Link>
           </nav>
         </div>
         <div className="flex gap-4 py-6">

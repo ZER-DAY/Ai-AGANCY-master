@@ -46,7 +46,7 @@ const TiktokInjouPage = () => {
             href="https://www.tiktok.com/tcn/scout_creators?use_spark=1&agency_scout_source=qr_code_leads&ShareLinkID=7449309449675590406"
             className="inline-block px-6 py-2 text-white bg-purple-700 rounded-md shadow-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500"
           >
-            اضعك هنا
+            اضغط هنا
           </a>
         </div>
       </div>

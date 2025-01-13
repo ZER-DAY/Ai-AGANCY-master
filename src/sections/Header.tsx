@@ -52,7 +52,7 @@ export const Header = () => {
             <nav className="hidden md:flex gap-6 text-white/60 items-center">
               <Link href="/">الرئيسية</Link>
               <Link href="/tiktok">تيك توك</Link>
-              <Link href="#">من نحن</Link>
+              <Link href="/aboutus">من نحن</Link>
               <Link href="#">اتصل بنا</Link>
               <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                 انطلق معنا

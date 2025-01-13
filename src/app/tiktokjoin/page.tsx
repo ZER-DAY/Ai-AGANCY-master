@@ -131,7 +131,7 @@ const TiktokInjouPage = () => {
             </div>
           </form>
           <p className="text-center text-sm text-gray-700 mt-6">
-            تم إستلام طلبكم للإنضمام إلى وكالة فنون ميديا
+            تم إستلام طلبكم للإنضمام إلى وكالةا
           </p>
         </div>
 

@@ -146,7 +146,11 @@ const TiktokInjouPage = () => {
             src="/alasil.mp4"
           ></video>
           <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
-            <Link href="/tiktokjoin" className="text-white no-underline">
+            <Link
+              href="https://www.tiktok.com/t/ZMk6Ynf78/"
+              className="text-white no-underline"
+              target="black"
+            >
               قدم طلب الانضمام
             </Link>
           </button>

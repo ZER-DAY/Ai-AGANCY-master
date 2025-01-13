@@ -79,7 +79,10 @@ export default function About() {
               </div>
               <div className="text-center mt-4">
                 <h4 className="text-lg font-bold"> </h4>
-                <p className="text-lg font-bold">توفيق الجليس </p>
+                <p className="text-lg font-bold text-white">
+                  {" "}
+                  tawfeek aljalees{" "}
+                </p>
               </div>
             </div>
 

@@ -18,7 +18,6 @@ const TiktokInjouPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form Submitted:", formData);
-    // أضف المنطق المطلوب لمعالجة البيانات المرسلة
   };
 
   return (
@@ -26,7 +25,6 @@ const TiktokInjouPage = () => {
       dir="rtl"
       className="min-h-screen flex flex-col items-center bg-gray-100 p-6"
     >
-      {/* الطريقة الأولى */}
       <div className="bg-white rounded-lg shadow-lg mt-8 p-6 max-w-2xl">
         <h2 className="text-purple-700 text-xl font-bold mb-4 text-center">
           الطريقة الأولى
@@ -34,7 +32,15 @@ const TiktokInjouPage = () => {
         <p>
           اضغط على الرابط المرفق/ سوف يفتح لك تطبيق تيك توك/ يجب تسجيل الدخول ثم
           إضغط على تقديم طلب
+          <a
+            target="_blank"
+            href="https://www.tiktok.com/tcn/scout_creators?use_spark=1&agency_scout_source=qr_code_leads&ShareLinkID=7449309449675590406"
+            className="justify-center items-center inline-block  py-2 text-white bg-purple-700 rounded-md shadow-md hover:bg-purple-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 mx-5"
+          >
+            اضغط هنا
+          </a>
         </p>
+
         <img
           src="/serv.png"
           alt="شرح الطريقة الأولى"
@@ -51,19 +57,18 @@ const TiktokInjouPage = () => {
         </div>
       </div>
 
-      {/* الطريقة الثانية */}
       <h1 className="text-purple-700 text-xl font-bold mb-4 text-center pt-8">
         الطريقة الثانية
       </h1>
 
-      <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start w-full max-w-7xl">
+      {/* إضافة Flexbox لتنسيق البطاقات */}
+      <div className="flex flex-wrap lg:flex-nowrap justify-center items-start gap-6 w-full max-w-7xl">
         {/* استمارة تقديم الطلب */}
-        <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8 mb-8 lg:mb-0">
+        <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8">
           <h2 className="text-purple-700 text-2xl font-semibold text-center mb-6">
             أدخل البيانات
           </h2>
           <form onSubmit={handleSubmit} className="space-y-4">
-            {/* معرف الحساب */}
             <div>
               <label
                 htmlFor="TIKtok@ID"
@@ -81,8 +86,6 @@ const TiktokInjouPage = () => {
                 required
               />
             </div>
-
-            {/* رمز الدعوة */}
             <div>
               <label
                 htmlFor="invitationCode"
@@ -100,8 +103,6 @@ const TiktokInjouPage = () => {
                 required
               />
             </div>
-
-            {/* اسم الوكيل */}
             <div>
               <label
                 htmlFor="agentName"
@@ -119,8 +120,6 @@ const TiktokInjouPage = () => {
                 required
               />
             </div>
-
-            {/* زر الإرسال */}
             <div className="text-center">
               <button
                 type="submit"
@@ -131,29 +130,29 @@ const TiktokInjouPage = () => {
             </div>
           </form>
           <p className="text-center text-sm text-gray-700 mt-6">
-            تم إستلام طلبكم للإنضمام إلى وكالةا
+            تم إستلام طلبكم للإنضمام إلى وكالة
           </p>
         </div>
 
         {/* قسم الفيديو */}
-        <div className="flex flex-col items-center lg:ml-8 w-full max-w-md">
+        <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8 flex flex-col items-center">
           <h2 className="text-purple-700 text-xl font-bold mb-4 text-center">
-            طريقة الحصول على رمز الدعوة
+            للحصول على رمز الدعوة
+            <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300 mt-4">
+              <Link
+                href="https://www.tiktok.com/t/ZMk6Ynf78/"
+                className="text-white no-underline"
+                target="black"
+              >
+                أضغط هنا
+              </Link>
+            </button>
           </h2>
           <video
             controls
             className="w-full rounded-lg shadow-lg mb-6"
             src="/alasil.mp4"
           ></video>
-          <button className="bg-blue-500 text-white font-bold py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors duration-300">
-            <Link
-              href="https://www.tiktok.com/t/ZMk6Ynf78/"
-              className="text-white no-underline"
-              target="black"
-            >
-              قدم طلب الانضمام
-            </Link>
-          </button>
         </div>
       </div>
     </section>

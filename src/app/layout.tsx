@@ -9,8 +9,9 @@ import { Header } from "@/sections/Header";
 const cairo = Cairo({ subsets: ["latin", "arabic"] });
 
 export const metadata: Metadata = {
-  title: "Light Saas Landing Page",
-  description: "Template created by Frontend Tribe",
+  title: "شركة الاصيل ",
+  description:
+    "وكالة الأصيل للتسويق والاستثمار هي شركة عُمانية متخصصة في تقديم خدمات التسويق وإدارة المحتوى الرقمي، تعمل كشريك رسمي لشركة تيك توك (TikTok Pte. Ltd) في منطقة الشرق الأوسط وشمال إفريقيا. تختص الوكالة في إدارة صُنّاع المحتوى على منصة تيك توك، حيث تقدم الدعم الفني والإداري لهم لضمان الالتزام بمعايير المنصة وتعزيز إنتاجيتهم وأدائهم. تعمل الوكالة كحلقة وصل بين تيك توك وصناع المحتوى، وتهدف إلى بناء بيئة إبداعية تنافسية تساعد على زيادة جودة البث المباشر والمحتوى التفاعلي، بما يساهم في تعزيز تجربة المستخدمين على المنصة",
 };
 
 export default function RootLayout({

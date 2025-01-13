@@ -5,9 +5,15 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import logoAlasel from "@/assets/Logoasel.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg";
+import { useState } from "react"; // استيراد useState
 
 export const Header = () => {
   const arrowControls = useAnimation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // حالة لإدارة فتح وإغلاق القائمة
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // تغيير حالة القائمة عند النقر على الأيقونة
+  };
 
   return (
     <header dir="rtl" className="sticky top-0 backdrop-blur-sm z-20">
@@ -46,7 +52,10 @@ export const Header = () => {
             </div>
 
             {/* أيقونة القائمة (للأجهزة المحمولة) */}
-            <MenuIcon className="h-5 w-5 md:hidden text-white" />
+            <MenuIcon
+              className="h-5 w-5 md:hidden text-white cursor-pointer"
+              onClick={toggleMenu} // عند النقر على الأيقونة، يتم تغيير حالة القائمة
+            />
 
             {/* قائمة التنقل (للأجهزة الكبيرة) */}
             <nav className="hidden md:flex gap-6 text-white/60 items-center">
@@ -58,6 +67,27 @@ export const Header = () => {
                 انطلق معنا
               </button>
             </nav>
+
+            {/* قائمة التنقل (للأجهزة المحمولة) */}
+            {isMenuOpen && (
+              <nav className="md:hidden absolute top-24 right-0 bg-[#1A1A1A] w-full text-white/60 p-4">
+                <Link href="/" className="block py-2">
+                  الرئيسية
+                </Link>
+                <Link href="/tiktok" className="block py-2">
+                  تيك توك
+                </Link>
+                <Link href="/aboutus" className="block py-2">
+                  من نحن
+                </Link>
+                <Link href="#" className="block py-2">
+                  اتصل بنا
+                </Link>
+                <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight mt-2">
+                  انطلق معنا
+                </button>
+              </nav>
+            )}
           </div>
         </div>
       </div>

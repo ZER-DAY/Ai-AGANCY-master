@@ -7,25 +7,26 @@ const benefits: {
   icon: keyof typeof Icons;
 }[] = [
   {
-    title: "Top-notch quality",
-    description:
-      "Insane design quality at your fingertips whenever you need it.",
+    title: "جودة عالية ",
+    description: "استراتجيات تسويق شخصية وتجارية عالية الجودة",
     icon: "paintBrush",
   },
   {
-    title: "Flexible and Scalable",
-    description: "Scale up or down as needed, and pause or cancel at anytime.",
+    title: "تعزيز المحتوى الإيجابي",
+    description:
+      "نسعى لتطوير مهارات اصحاب الأفكار الريادية, ونعطي الأولوية لذوي الاحتياجات الخاصة.",
     icon: "shrub",
   },
   {
-    title: "Fixed monthly rate",
-    description: "No surprises here! Pay the same fixed price each month.",
+    title: "أسعارنا في متناول الجميع",
+    description:
+      "يمكن ان تحصل على خدماتنا مجاناً, في حال انضمامك لوكالتنا في تيك توك.",
     icon: "money",
   },
   {
-    title: "Unique and all yours",
+    title: "بصمة مؤثرة",
     description:
-      "We don't reuse designs. You get 100% ownership of everything we create.",
+      "نساعدك لبناء تواجدك الرقمي, وتسويق نفسك او أعمالك ومنتجاتك بكل احترافية.",
     icon: "fingerprint",
   },
 ];

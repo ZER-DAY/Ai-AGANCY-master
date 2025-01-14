@@ -6,6 +6,7 @@ import cyclinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
+import { Link } from "lucide-react";
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -58,7 +59,9 @@ export const Hero = () => {
                 onHoverEnd={() => setIsHovered(false)}
                 tabIndex={0} // Ensures the button is focusable via keyboard
               >
-                <span>تعرف اكثر عنا </span>
+                <Link href="/aboutu">
+                  <span>تعرف اكثر عنا </span>
+                </Link>
                 <motion.div
                   key={"arrow"}
                   initial={{ x: 0 }}

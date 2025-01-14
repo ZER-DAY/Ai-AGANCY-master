@@ -74,7 +74,7 @@ export const Footer = () => {
           <nav className="flex flex-col items-center md:flex-row gap-4">
             <Link href="/">الرئيسية</Link>
             <Link href="/tiktok">تيك توك</Link>
-            <Link href="#">من نحن</Link>
+            <Link href="/aboutus">من نحن</Link>
             <Link href="#">اتصل بنا</Link>
           </nav>
         </div>

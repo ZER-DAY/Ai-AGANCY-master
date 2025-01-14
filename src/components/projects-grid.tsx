@@ -42,10 +42,14 @@ const ProjectsGrid = () => {
 
           <motion.div
             variants={containerVariants}
-            className="grid gap-6 px-4 md:grid-cols-3"
+            className="flex flex-wrap gap-6 justify-center px-4 md:grid md:grid-cols-3"
           >
             {projects.map((project) => (
-              <motion.div key={project.id} variants={itemVariants}>
+              <motion.div
+                key={project.id}
+                variants={itemVariants}
+                className="w-full md:w-auto flex justify-center"
+              >
                 <ProjectCard
                   project={project}
                   hoveredId={hoveredId}

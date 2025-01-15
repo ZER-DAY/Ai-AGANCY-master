@@ -17,7 +17,6 @@ interface TimelineItem {
 }
 
 const Timeline: React.FC = () => {
-  // تحديد النوع TimelineItem[] للمصفوفة
   const items: TimelineItem[] = [
     {
       title: "الخطوة الأولى",
@@ -212,6 +211,7 @@ const Timeline: React.FC = () => {
         <Chrono
           items={items}
           mode="VERTICAL"
+          rtl={true} // ضبط الاتجاه من اليمين إلى اليسار
           theme={{
             primary: "#4F46E5",
             secondary: "#FFD700",

@@ -6,7 +6,7 @@ import cyclinderImage from "@/assets/cylinder.png";
 import noodleImage from "@/assets/noodle.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { Link } from "lucide-react";
+import Link from "next/link"; // استبدل import من lucide-react بـ next/link
 
 export const Hero = () => {
   const heroRef = useRef(null);
@@ -52,25 +52,27 @@ export const Hero = () => {
               >
                 سجل معنا
               </button>
-              <motion.button
-                className="bg-amber-300 text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight"
-                aria-label="Learn more about Pathway to productivity"
-                onHoverStart={() => setIsHovered(true)}
-                onHoverEnd={() => setIsHovered(false)}
-                tabIndex={0} // Ensures the button is focusable via keyboard
-              >
-                <Link href="/aboutu">
-                  <span>تعرف اكثر عنا </span>
-                </Link>
-                <motion.div
-                  key={"arrow"}
-                  initial={{ x: 0 }}
-                  animate={{ x: isHovered ? 10 : 0 }} // Increased movement for better visibility
-                  transition={{ type: "spring", stiffness: 300 }} // Smoother transition
+              <Link href="/aboutus">
+                <motion.button
+                  className="bg-amber-300 text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight"
+                  aria-label="Learn more about Pathway to productivity"
+                  onHoverStart={() => setIsHovered(true)}
+                  onHoverEnd={() => setIsHovered(false)}
+                  tabIndex={0} // Ensures the button is focusable via keyboard
                 >
-                  <ArrowRight className="h-5 w-5 pt-0.5" />
-                </motion.div>
-              </motion.button>
+                  <span style={{ opacity: 1, display: "inline-block" }}>
+                    تعرف اكثر عنا
+                  </span>
+                  <motion.div
+                    key={"arrow"}
+                    initial={{ x: 0 }}
+                    animate={{ x: isHovered ? 10 : 0 }} // Increased movement for better visibility
+                    transition={{ type: "spring", stiffness: 300 }} // Smoother transition
+                  >
+                    <ArrowRight className="h-5 w-5 pt-0.5" />
+                  </motion.div>
+                </motion.button>
+              </Link>
             </div>
           </div>
           <div className="mt-20 md:mt-0 md:h-[648px] md:flex-1 relative">
@@ -88,29 +90,6 @@ export const Hero = () => {
                 ease: "easeInOut",
               }}
             />
-            {/* <motion.img
-              src={cyclinderImage.src}
-              alt="Cylinder image"
-              className="hidden md:block -top-8 -left-32 lg:-left-20 md:absolute"
-              width={220}
-              height={220}
-              initial={{ y: 0 }}
-              style={{
-                translateY: shouldAnimate ? translateY : 0,
-              }}
-            /> */}
-            {/* <motion.img
-              src={noodleImage.src}
-              alt="Noodle image"
-              className="hidden lg:block top-[524px] left-[448px] md:absolute"
-              width={220}
-              height={220}
-              initial={{ y: 0, rotate: 30 }}
-              style={{
-                translateY: shouldAnimate ? translateY : 0,
-                rotate: 30,
-              }}
-            /> */}
           </div>
         </div>
       </div>

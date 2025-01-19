@@ -66,7 +66,7 @@ export const Header = () => {
               <Link href="/">الرئيسية</Link>
               <Link href="/tiktok">تيك توك</Link>
               <Link href="/aboutus">من نحن</Link>
-              <Link href="#">اتصل بنا</Link>
+              <Link href="/contact">اتصل بنا</Link>
               <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
                 انطلق معنا
               </button>
@@ -88,7 +88,12 @@ export const Header = () => {
                 >
                   من نحن
                 </Link>
-                <Link href="#" className="block py-2" onClick={closeMenu}>
+
+                <Link
+                  href="/contact"
+                  className="block py-2"
+                  onClick={closeMenu}
+                >
                   اتصل بنا
                 </Link>
                 <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight mt-2">

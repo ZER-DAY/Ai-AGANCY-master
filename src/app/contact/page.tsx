@@ -20,7 +20,17 @@ const AboutPage = () => {
             العالم العربي وما بعده. تأسست شركتنا في قطاع غزة، فلسطين، وتحديدًا
             في مدينة غزة على شارع الوحدة بالقرب من برج الجوهرة. يمكنكم التواصل
             معنا عبر الرقم
-            <span className="font-bold text-gray-800"> 00970598707089.</span>
+            <div className="mt-8 flex justify-center items-center space-x-4 space-x-reverse">
+              <a
+                href="https://wa.me/00970598707089"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+              >
+                <FaWhatsapp className="w-6 h-6 mr-2" />
+                واتساب
+              </a>
+            </div>
           </p>
 
           {/* فرع إسطنبول */}
@@ -33,7 +43,17 @@ const AboutPage = () => {
               المعلومات نشاطاتها إلى تركيا، حيث افتتحنا فرعنا في إسطنبول،
               بلكدوزو، لتكون نقطة انطلاق جديدة في رحلتنا نحو العالمية. يمكنكم
               الاتصال بفرعنا في إسطنبول عبر الرقم
-              <span className="font-bold text-gray-800"> 00905526966689.</span>
+              <div className="mt-8 flex justify-center items-center space-x-4 space-x-reverse">
+                <a
+                  href="https://wa.me/00905526966689"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+                >
+                  <FaWhatsapp className="w-6 h-6 mr-2" />
+                  واتساب
+                </a>
+              </div>
             </p>
           </div>
 
@@ -47,7 +67,17 @@ const AboutPage = () => {
               حصلنا في عام 2024 على ترخيص للعمل في سلطنة عُمان، حيث يقع مكتبنا
               في مسقط، الخوير بالقرب من عُمان مول. للتواصل مع فرعنا في عُمان،
               يمكنكم الاتصال على الرقم
-              <span className="font-bold text-gray-800"> 0096879445665.</span>
+              <div className="mt-8 flex justify-center items-center space-x-4 space-x-reverse">
+                <a
+                  href="https://wa.me/+96879445665"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+                >
+                  <FaWhatsapp className="w-6 h-6 mr-2" />
+                  واتساب
+                </a>
+              </div>
             </p>
           </div>
 
@@ -59,31 +89,6 @@ const AboutPage = () => {
             مع أحدث التطورات التكنولوجية، مع الحفاظ على القيم والعادات الأصيلة
             للمجتمعات.
           </blockquote>
-        </div>
-
-        {/* أزرار الواتساب والتليجرام */}
-        <div className="mt-8 flex justify-center items-center space-x-4 space-x-reverse">
-          {/* زر واتساب */}
-          <a
-            href="https://wa.me/+96879445665"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
-          >
-            <FaWhatsapp className="w-6 h-6 mr-2" />
-            واتساب
-          </a>
-
-          {/* زر تليجرام */}
-          <a
-            href="https://t.me/Tawfeekpal"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
-          >
-            <FaTelegram className="w-6 h-6 mr-2" />
-            تليجرام
-          </a>
         </div>
       </div>
     </div>

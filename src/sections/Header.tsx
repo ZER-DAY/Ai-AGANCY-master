@@ -73,7 +73,7 @@ export const Header = () => {
                   href="https://wa.me/+96879445665"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+                  className="flex items-center bg-white-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
                 >
                   <FaWhatsapp className="w-6 h-6 mr-2" />
                   تواصل معنا

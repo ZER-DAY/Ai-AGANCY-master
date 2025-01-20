@@ -6,7 +6,7 @@ import logoAlasel from "@/assets/Logoasel.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg";
 import { useState } from "react"; // استيراد useState
-
+import { FaWhatsapp } from "react-icons/fa";
 export const Header = () => {
   const arrowControls = useAnimation();
   const [isMenuOpen, setIsMenuOpen] = useState(false); // حالة لإدارة فتح وإغلاق القائمة
@@ -67,9 +67,18 @@ export const Header = () => {
               <Link href="/tiktok">تيك توك</Link>
               <Link href="/aboutus">من نحن</Link>
               <Link href="/contact">اتصل بنا</Link>
-              <button className="bg-white text-black px-4 py-2 rounded-lg font-medium inline-flex align-items justify-center tracking-tight">
-                انطلق معنا
-              </button>
+              <div className="mt-3 flex justify-center items-center space-x-4 space-x-reverse">
+                {/* زر واتساب */}
+                <a
+                  href="https://wa.me/+96879445665"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+                >
+                  <FaWhatsapp className="w-6 h-6 mr-2" />
+                  تواصل معنا
+                </a>
+              </div>
             </nav>
 
             {/* قائمة التنقل (للأجهزة المحمولة) */}

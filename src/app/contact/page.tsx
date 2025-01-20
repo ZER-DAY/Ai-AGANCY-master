@@ -1,5 +1,6 @@
 // app/about/page.tsx
 import React from "react";
+import { FaWhatsapp, FaTelegram } from "react-icons/fa";
 
 const AboutPage = () => {
   return (
@@ -58,6 +59,31 @@ const AboutPage = () => {
             مع أحدث التطورات التكنولوجية، مع الحفاظ على القيم والعادات الأصيلة
             للمجتمعات.
           </blockquote>
+        </div>
+
+        {/* أزرار الواتساب والتليجرام */}
+        <div className="mt-8 flex justify-center items-center space-x-4 space-x-reverse">
+          {/* زر واتساب */}
+          <a
+            href="https://wa.me/+96879445665"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-green-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-green-600 transition"
+          >
+            <FaWhatsapp className="w-6 h-6 mr-2" />
+            واتساب
+          </a>
+
+          {/* زر تليجرام */}
+          <a
+            href="https://t.me/Tawfeekpal"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600 transition"
+          >
+            <FaTelegram className="w-6 h-6 mr-2" />
+            تليجرام
+          </a>
         </div>
       </div>
     </div>
